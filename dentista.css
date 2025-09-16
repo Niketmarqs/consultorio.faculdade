@@ -1,0 +1,119 @@
+/* ====== Reset básico ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ====== Cores ====== */
+:root {
+  --azul: #0b72b9;
+  --azul-escuro: #095a92;
+  --fundo: #f2f7fb;
+  --texto: #222;
+  --cinza: #666;
+}
+
+/* ====== Geral ====== */
+body {
+  background: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--azul);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform .2s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+h1, h2 {
+  color: var(--azul);
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+button {
+  background: var(--azul);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background .3s ease;
+}
+
+button:hover {
+  background: var(--azul-escuro);
+}
+
+.list {
+  margin-top: 10px;
+}
+
+.item {
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+}
+
+.muted {
+  color: var(--cinza);
+  font-size: 14px;
+}
+/* Estilo do topo */
+.topo {
+  text-align: center;
+  background: linear-gradient(135deg, #0056a6, #003d73);
+  color: white;
+  padding: 30px 15px;
+  border-bottom: 5px solid #ffcc00;
+}
+
+.topo .logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.topo h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.topo .slogan {
+  font-size: 1.2rem;
+  font-style: italic;
+  opacity: 0.9;
+}
